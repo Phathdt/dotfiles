@@ -1,0 +1,167 @@
+# env:
+#   TERM: xterm-256color
+
+# window:
+#   dimensions:
+#     columns: 80
+#     lines: 24
+
+#   padding:
+#     x: 10
+#     y: 10
+
+#   # Spread additional padding evenly around the terminal content.
+#   dynamic_padding: true
+
+#   # Values for `decorations`:
+#   #     - full: Borders and title bar
+#   #     - none: Neither borders nor title bar
+#   #
+#   # Values for `decorations` (macOS only):
+#   #     - transparent: Title bar, transparent background and title bar buttons
+#   #     - buttonless: Title bar, transparent background, but no title bar buttons
+#   decorations: full
+
+#   # Startup Mode (changes require restart)
+#   #
+#   # Values for `startup_mode`:
+#   #   - Windowed
+#   #   - Maximized
+#   #   - Fullscreen
+#   #
+#   # Values for `startup_mode` (macOS only):
+#   #   - SimpleFullscreen
+#   startup_mode: Maximized
+
+# scrolling:
+#   history: 20000
+#   multiplier: 3
+
+# colors:
+#   # Default colors
+#   primary:
+#     background: '0x292d3e'
+#     foreground: '0x959dcb'
+
+#   # Colors the cursor will use if `custom_cursor_colors` is true
+#   cursor:
+#     text: '0x292d3e'
+#     cursor: '0x959dcb'
+
+#   # Normal colors
+#   normal:
+#     black: '0x292d3e'
+#     red: '0xf07178'
+#     green: '0xc3e88d'
+#     yellow: '0xffcb6b'
+#     blue: '0x82aaff'
+#     magenta: '0xc792ea'
+#     cyan: '0x89ddff'
+#     white: '0x959dcb'
+
+#   # Bright colors
+#   bright:
+#     black: '0x676e95'
+#     red: '0xf07178'
+#     green: '0xc3e88d'
+#     yellow: '0xffcb6b'
+#     blue: '0x82aaff'
+#     magenta: '0xc792ea'
+#     cyan: '0x89ddff'
+#     white: '0xffffff'
+
+#   indexed_colors:
+#     - { index: 16, color: '0xf78c6c' }
+#     - { index: 17, color: '0xff5370' }
+#     - { index: 18, color: '0x444267' }
+#     - { index: 19, color: '0x32374d' }
+#     - { index: 20, color: '0x8796b0' }
+#     - { index: 21, color: '0x959dcb' }
+
+#   draw_bold_text_with_bright_colors: true
+
+# # mouse:
+# #   # Click settings
+# #   #
+# #   # The `double_click` and `triple_click` settings control the time
+# #   # alacritty should wait for accepting multiple clicks as one double
+# #   # or triple click.
+# #   #double_click: { threshold: 300 }
+# #   #triple_click: { threshold: 300 }
+# #   # If this is `true`, the cursor is temporarily hidden when typing.
+# #   # hide_when_typing: true
+
+# selection:
+#   semantic_escape_chars: ',│`|:"'' ()[]{}<>'
+
+#   # When set to `true`, selected text will be copied to the primary clipboard.
+#   save_to_clipboard: false
+
+# cursor:
+#   # Cursor style
+#   #
+#   # Values for `style`:
+#   #   - ▇ Block
+#   #   - _ Underline
+#   #   - | Beam
+#   style: Beam
+#   # If this is `true`, the cursor will be rendered as a hollow box when the
+#   # window is not focused.
+#   unfocused_hollow: true
+
+# font:
+#   normal:
+#     family: 'JetBrainsMono Nerd Font Mono'
+#     style: Regular
+
+#   # Point size
+#   size: 14.0
+
+#   # Offset is the extra space around each character. `offset.y` can be thought of
+#   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
+#   offset:
+#     x: 0
+#     y: 0
+
+#   # Glyph offset determines the locations of the glyphs within their cells with
+#   # the default being at the bottom. Increasing `x` moves the glyph to the right,
+#   # increasing `y` moves the glyph upwards.
+#   glyph_offset:
+#     x: 0
+#     y: 0
+
+#   # Scale the font size based on the monitor's DPI. This will lead to bigger text on HiDPI
+#   # screens and make reading text a little easier.
+#   scale_with_dpi: true
+
+#   # Thin stroke font rendering (OS X only)
+#   #
+#   # Thin strokes are suitable for retina displays, but for non-retina screens
+#   # it is recommended to set `use_thin_strokes` to `false`
+#   # use_thin_strokes: true
+# key_bindings:
+#   - { key: Key0, mods: Command, action: None }
+#   - { key: Equals, mods: Command, action: None }
+#   # - { key: Add, mods: Command, action: None }
+#   - { key: Minus, mods: Command, action: None }
+#   # - { key: K, mods: Command, action: None }
+#   - { key: H, mods: Command, action: None }
+#   - { key: Q, mods: Command, action: None }
+#   - { key: W, mods: Command, action: None }
+#   # - { key: F, mods: Command, action: None }
+#   - { key: M, mods: Command, action: None }
+#   - { key: Return, mods: Command, action: None }
+#   - { key: Up, mods: Alt, chars: "\x1b[1;5A" }
+#   - { key: Down, mods: Alt, chars: "\x1b[1;5B" }
+#   - { key: Left, mods: Alt, chars: "\x1bb" }
+#   - { key: Right, mods: Alt, chars: "\x1bf" }
+#   - { key: Key0, mods: Alt, chars: 'º' }
+#   - { key: Key1, mods: Alt, chars: '¡' }
+#   - { key: Key2, mods: Alt, chars: '€' }
+#   - { key: Key3, mods: Alt, chars: '#' }
+#   - { key: Key4, mods: Alt, chars: '¢' }
+#   - { key: Key5, mods: Alt, chars: '∞' }
+#   - { key: Key6, mods: Alt, chars: '§' }
+#   - { key: Key7, mods: Alt, chars: '¶' }
+#   - { key: Key8, mods: Alt, chars: '•' }
+#   - { key: Key9, mods: Alt, chars: 'ª' }

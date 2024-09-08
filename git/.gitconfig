@@ -1,0 +1,9 @@
+[user]
+	name = Phathdt
+	email = phathdt379@gmail.com
+[push]
+	default = current
+[core]
+	editor = nvim
+[init]
+	defaultBranch = main
